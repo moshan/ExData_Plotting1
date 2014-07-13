@@ -22,7 +22,7 @@ plot_3 <- function(df2){
   
   png("./plot3.png")
   
-  with(df2, plot(Sub_metering_1, type="l",xaxt='n', ylab="Energy sub metering"))
+  with(df2, plot(Sub_metering_1, type="l",xaxt='n', ylab="Energy sub metering", xlab=""))
   with(df2, points(Sub_metering_2, type="l",xaxt='n', col="red"))
   with(df2, points(Sub_metering_3, type="l",xaxt='n', col="blue"))
   axis(1, at=c(0,nrow(df2)/2,nrow(df2)),labels=c("Thu","Fri","Sat"))

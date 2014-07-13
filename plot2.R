@@ -20,7 +20,7 @@ read_data <- function(){
 plot_2 <- function(df2){
   png("./plot2.png")
   
-  plot(df2$Global_active_power, type="l",xaxt='n', ylab="Global Active Power (kilowatts)")
+  plot(df2$Global_active_power, type="l",xaxt='n', ylab="Global Active Power (kilowatts)", xlab="" )
   axis(1, at=c(0,nrow(df2)/2,nrow(df2)),labels=c("Thu","Fri","Sat")) 
   
   dev.off();
